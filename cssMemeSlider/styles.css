@@ -3,8 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
+  font-family: "Reddit Sans Condensed", sans-serif;
 }
 
 body {
@@ -42,11 +44,8 @@ input {
 .bottom-slider {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   padding-top: 2rem;
-}
-
-.controls {
-	margin-right: -20rem;
 }
 
 label {
@@ -95,7 +94,6 @@ label:hover {
   color: rgb(159, 233, 221);
   overflow: hidden;
   font-size: 2rem;
-  text-align: right;
 }
 
 .slide-title {
