@@ -111,3 +111,18 @@ label:hover {
   height: 3rem;
   opacity: 1;
 }
+
+@media screen and (max-width: 500px) {
+
+  html {
+    font-size: 6px;
+  }
+
+  .bottom-slider {
+    flex-direction: column;
+  }
+
+  .controls {
+    align-self: center;
+  }
+}
