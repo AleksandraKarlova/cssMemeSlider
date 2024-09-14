@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+body {
+	background-color: black;
+}
+
+.meme-wrapper {
+	height: 40rem;
+	margin: 10em auto 0;
+	width: 60rem;
+}
+
+input {
+	display: none;
+}
+
+.slides-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+	height: inherit;
+  display: flex;
+  transition: transform ease-out .5s, opacity ease-out .5s;
+}
+
+.slides {
+	height: inherit;
+	width: 60rem;
+  flex-shrink: 0;
+}
+
+.bottom-slider {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-top: 2rem;
+}
+
+label {
+	cursor: pointer;
+	display: inline-block;
+	height: 1rem;
+	margin: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+  background-color: rgb(159, 233, 221);
+}
+
+label:hover {
+	background:  rgb(76, 156, 143);
+}
+
+#meme1:checked ~ .bottom-slider .controls label:nth-of-type(1),
+#meme2:checked ~ .bottom-slider .controls label:nth-of-type(2),
+#meme3:checked ~ .bottom-slider .controls label:nth-of-type(3),
+#meme4:checked ~ .bottom-slider .controls label:nth-of-type(4),
+#meme5:checked ~ .bottom-slider .controls label:nth-of-type(5) {
+	background:  rgb(27, 71, 64);
+}
+
+#meme1:checked ~ .slides-wrapper > .slider {
+  transform: translateX(0);
+}
+
+#meme2:checked ~ .slides-wrapper > .slider {
+  transform: translateX(-60rem);
+}
+
+#meme3:checked ~ .slides-wrapper > .slider {
+  transform: translateX(-120rem);
+}
+
+#meme4:checked ~ .slides-wrapper > .slider {
+  transform: translateX(-180rem);
+}
+
+#meme5:checked ~ .slides-wrapper > .slider {
+  transform: translateX(-240rem);
+}
+
+.text-slider {
+  color: rgb(159, 233, 221);
+  overflow: hidden;
+  font-size: 2rem;
+}
+
+.slide-title {
+  height: 0;
+  opacity: 0;
+  transition: all ease-out .5s;
+}
+
+#meme1:checked ~ .bottom-slider .title1,
+#meme2:checked ~ .bottom-slider .title2,
+#meme3:checked ~ .bottom-slider .title3,
+#meme4:checked ~ .bottom-slider .title4,
+#meme5:checked ~ .bottom-slider .title5
+{
+  height: 3rem;
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+
+  html {
+    font-size: 6px;
+  }
+
+  .bottom-slider {
+    flex-direction: column;
+  }
+
+  .controls {
+    align-self: center;
+  }
+}
