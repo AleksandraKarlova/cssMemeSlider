@@ -30,6 +30,7 @@ input {
 .slider {
 	height: inherit;
   display: flex;
+  transition: transform ease-out .5s, opacity ease-out .5s;
 }
 
 .slides {
@@ -38,11 +39,17 @@ input {
   flex-shrink: 0;
 }
 
-.meme-wrapper .controls {
+.bottom-slider {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.controls {
 	margin-right: -20rem;
 }
 
-.meme-wrapper label {
+label {
 	cursor: pointer;
 	display: inline-block;
 	height: 1rem;
@@ -52,7 +59,7 @@ input {
   background-color: rgb(159, 233, 221);
 }
 
-.meme-wrapper label:hover {
+label:hover {
 	background:  rgb(76, 156, 143);
 }
 
@@ -62,10 +69,6 @@ input {
 #slide4:checked ~ .bottom-slider .controls label:nth-of-type(4),
 #slide5:checked ~ .bottom-slider .controls label:nth-of-type(5) {
 	background:  rgb(27, 71, 64);
-}
-
-.slider {
-	transition: transform ease-out .5s, opacity ease-out .5s;
 }
 
 #slide1:checked ~ .slides-wrapper > .slider {
@@ -86,12 +89,6 @@ input {
 
 #slide5:checked ~ .slides-wrapper > .slider {
   transform: translateX(-240rem);
-}
-
-.bottom-slider {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
 }
 
 .text-slider {
