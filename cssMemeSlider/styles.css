@@ -62,31 +62,31 @@ label:hover {
 	background:  rgb(76, 156, 143);
 }
 
-#slide1:checked ~ .bottom-slider .controls label:nth-of-type(1),
-#slide2:checked ~ .bottom-slider .controls label:nth-of-type(2),
-#slide3:checked ~ .bottom-slider .controls label:nth-of-type(3),
-#slide4:checked ~ .bottom-slider .controls label:nth-of-type(4),
-#slide5:checked ~ .bottom-slider .controls label:nth-of-type(5) {
+#meme1:checked ~ .bottom-slider .controls label:nth-of-type(1),
+#meme2:checked ~ .bottom-slider .controls label:nth-of-type(2),
+#meme3:checked ~ .bottom-slider .controls label:nth-of-type(3),
+#meme4:checked ~ .bottom-slider .controls label:nth-of-type(4),
+#meme5:checked ~ .bottom-slider .controls label:nth-of-type(5) {
 	background:  rgb(27, 71, 64);
 }
 
-#slide1:checked ~ .slides-wrapper > .slider {
+#meme1:checked ~ .slides-wrapper > .slider {
   transform: translateX(0);
 }
 
-#slide2:checked ~ .slides-wrapper > .slider {
+#meme2:checked ~ .slides-wrapper > .slider {
   transform: translateX(-60rem);
 }
 
-#slide3:checked ~ .slides-wrapper > .slider {
+#meme3:checked ~ .slides-wrapper > .slider {
   transform: translateX(-120rem);
 }
 
-#slide4:checked ~ .slides-wrapper > .slider {
+#meme4:checked ~ .slides-wrapper > .slider {
   transform: translateX(-180rem);
 }
 
-#slide5:checked ~ .slides-wrapper > .slider {
+#meme5:checked ~ .slides-wrapper > .slider {
   transform: translateX(-240rem);
 }
 
@@ -102,11 +102,11 @@ label:hover {
   transition: all ease-out .5s;
 }
 
-#slide1:checked ~ .bottom-slider .title1,
-#slide2:checked ~ .bottom-slider .title2,
-#slide3:checked ~ .bottom-slider .title3,
-#slide4:checked ~ .bottom-slider .title4,
-#slide5:checked ~ .bottom-slider .title5
+#meme1:checked ~ .bottom-slider .title1,
+#meme2:checked ~ .bottom-slider .title2,
+#meme3:checked ~ .bottom-slider .title3,
+#meme4:checked ~ .bottom-slider .title4,
+#meme5:checked ~ .bottom-slider .title5
 {
   height: 3rem;
   opacity: 1;
