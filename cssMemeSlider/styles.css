@@ -11,7 +11,7 @@ body {
 	background-color: black;
 }
 
-.wrapper {
+.meme-wrapper {
 	height: 40rem;
 	margin: 10em auto 0;
 	width: 60rem;
@@ -38,11 +38,11 @@ input {
   flex-shrink: 0;
 }
 
-.wrapper .controls {
+.meme-wrapper .controls {
 	margin-right: -20rem;
 }
 
-.wrapper label {
+.meme-wrapper label {
 	cursor: pointer;
 	display: inline-block;
 	height: 1rem;
@@ -52,7 +52,7 @@ input {
   background-color: rgb(159, 233, 221);
 }
 
-.wrapper label:hover {
+.meme-wrapper label:hover {
 	background:  rgb(76, 156, 143);
 }
 
